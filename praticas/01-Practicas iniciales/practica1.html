@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script> 
+</head>
+
+<body>
+    <h1>Mi primer ejemplo REACT</h1>
+    <h2>Otro ejemplo</h2>
+    <div id="principal">
+
+    </div>
+    <script type="text/babel">
+        //Ejemplo en modo deaclatrativo JSX
+        const elemento=<h2>Esto és un elemento JSX de react</h2>;
+        //Crear un elemento Root para la aplicacion
+        const contenedor=ReactDOM.createRoot(document.getElementById("principal"));
+        //Associar este elementro dentrol del contenedor
+        contenedor.render(elemento)
+    </script>
+</body>
+
+</html>
